@@ -8,10 +8,10 @@
   </head>
   <body class="body m-4">
 
-	<table class="table">
-		<h6 class="text-secondary">List of all transcations</h6>
-		<thead>
-		  <tr class="text-white bg-dark">
+	<table class="table table-responsive table-hover">
+		<caption class="text-secondary">List of all transcations</caption>
+		<thead class="table-dark">
+		  <tr class="text-white">
 			<th scope="col">#</th>
 			<th scope="col">From</th>
 			<th scope="col">To</th>
@@ -37,10 +37,12 @@
 			<td>John</td>
 			<td>2000</td>
 		  </tr>
-		  <tr>
-			<td colspan="3" class= "text-center"><b>Total</b></td>
-			<td><b>4000</b></td>
-			 </tr>
+		  <tfoot class="table-light">
+			<tr>
+				<td id="total" colspan="3" class= "font-monospace, text-end, fw-bold"><b>Total</b></td>
+				<td><b>4000</b></td>
+				 </tr>
+		  </tfoot>
 
 		</tbody>
 	  </table>
